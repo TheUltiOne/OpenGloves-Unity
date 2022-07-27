@@ -7,7 +7,7 @@ using OpenGloves_Unity.Logging;
 
 namespace OpenGloves_Unity
 {
-    public class Link
+    public class Link : IDisposable
     {
         public NamedPipeClientStream PipeStream { get; private set; }
         public const string PipeName = @"vrapplication\ffb\curl\";
@@ -53,6 +53,11 @@ namespace OpenGloves_Unity
             Marshal.FreeHGlobal(pointer);
 
             PipeStream.Write(bytes, 0, size);
+        }
+
+        public void Dispose()
+        {
+            PipeStream?.Dispose();
         }
     }
 }

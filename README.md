@@ -18,6 +18,15 @@ This project does not only work with **Unity**. It will work with **Godot** game
 
 This contains a **Log** class you can use to log stuff for your mod. Just create an instance of the `OpenGloves_Unity::Logging::Log` class (and remember to read the documentation).
 
-So, if you want to use it, create an instance of `OpenGloves_Unity::Link` for both hands (using the Handedness argument). After that, create an instance of a `OpenGloves_Unity::Data::Input` struct and specify the curls in it's arguments, and pass it to your `Link` instance through `Link::Write`.
+**Shared Link Instances**
+
+The library contains the possibility to use already created for you instances of `Link`s, which are what connects to the Drivers through things named "named pipes". You can find more about them online. To access said "shared links", use `OpenGloves_Unity::Shared::SharedLinks`. They contain a link for each hand. You can send information about Force Feedbacks using "finger curls". Use `Link::Write(Input input)`. The input struct is in `OpenGloves_Unity::Data::Input` (that is passed as an argument).
+
+**If you want to create your own Link instances**
+
+If you want to create your own instances instead of using the Shared links, you can create an instance of `OpenGloves_Unity::Link` for both hands (using the Handedness argument).
+
+### If you still need help
+If you don't understand how to use this, or need examples, feel free to contact me on Discord: The Ulti One#1998.
 
 ## Thanks for using :)

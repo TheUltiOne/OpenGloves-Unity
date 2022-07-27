@@ -45,6 +45,8 @@
         <Compile Include="Extensions\LogExtensions.cs" />
         <Compile Include="Logging\Log.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Shared\SharedLink.cs" />
+        <Compile Include="Shared\SharedLinks.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include="LICENSE" />
