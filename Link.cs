@@ -13,8 +13,10 @@ namespace OpenGloves_Unity
         public const string PipeName = @"vrapplication\ffb\curl\";
         public const int Timeout = 10;
 
+        public Handedness Handedness { get; }
         public Link(Handedness handedness)
         {
+            Handedness = handedness;
             var handstr = handedness.HandednessToString();
             PipeStream = new NamedPipeClientStream($"{PipeName}{handstr}");
             Log.OpenGlovesLogger.Info($"Connecting to hand pipe for {handstr} hand... ({Timeout}s timeout)");
