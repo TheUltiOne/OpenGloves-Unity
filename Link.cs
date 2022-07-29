@@ -9,11 +9,12 @@ namespace OpenGloves_Unity
 {
     public class Link : IDisposable
     {
-        public NamedPipeClientStream PipeStream { get; private set; }
+        public NamedPipeClientStream PipeStream { get; }
+        public Handedness Handedness { get; }
+
         public const string PipeName = @"vrapplication\ffb\curl\";
         public const int Timeout = 10;
 
-        public Handedness Handedness { get; }
         public Link(Handedness handedness)
         {
             Handedness = handedness;
