@@ -2,10 +2,10 @@
 A **C#** library made to interact with the force feedback of the [OpenGloves driver](https://github.com/LucidVR/opengloves-driver).
 
 ## Disclaimer
-A large amount of this code is not mine. (Most) credit goes to [Hydr4](https://github.com/Hydr4Bytes) from his [Boneworks FFB mod](https://github.com/LucidVR/opengloves-boneworks-mod).
+A large amount of this code is not mine. (Most) credit goes to [L4rs](https://github.com/Hydr4Bytes) from his [Boneworks FFB mod](https://github.com/LucidVR/opengloves-boneworks-mod).
 
 ### What is this?
-A library I am planning on using for my mods. At the time of creation, I was not yet aware Hydr4 had made a library himself ([Hydr4](https://github.com/Hydr4Bytes/OpenGlovesLib)). This just has a different naming convention and (some) documentation. I am planning to add a sample with this.
+A library I am planning on using for my mods. At the time of creation, I was not yet aware L4rs had made a library himself ([his library](https://github.com/Hydr4Bytes/OpenGlovesLib)). This just has a different naming convention and (some) documentation. I am planning to add a sample with this.
 
 I made this specifically for the ChilloutVR FFB mod I'm making. Feel free to use as a dependency.
 
